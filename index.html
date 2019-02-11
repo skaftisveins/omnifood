@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="vendors/css/normalize.css">
         <link rel="stylesheet" href="vendors/css/grid.css">
         <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" href="vendors/css/animate.css">
         <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
         <title>Omnifood</title>
@@ -17,29 +19,31 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
-                    <ul class="main-nav"><!-- ul.main-nav>li*4>a[href=""] -->
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our cities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                    <ul class="main-nav js--main-nav"><!-- ul.main-nav>li*4>a[href=""] -->
+                        <li><a href="#features">Food delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="icon ion-md-menu"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-                <a class="btn btn-full" href="#">I'm hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
             </div>
 
         </header>
-        <section class="section-features">
+        <section class="section-features js--section-features" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">
                         Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
                 </p>
             </div>
-            <div class="row"> <!-- div.row>div.col.span-1-of-4>h3>p -->
+            <div class="row js--wp-1"> <!-- div.row>div.col.span-1-of-4>h3>p -->
                 <div class="col span-1-of-4 box">
                     <i class="icon ion-md-infinite icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -114,13 +118,13 @@
             </ul>
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps" id="works">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box">
-                    <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
+                    <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="works-step">
@@ -144,11 +148,11 @@
             </div>
         </section>
 
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="resources/img/lisbon-3.jpg" alt="Lisbon">
                     <h3>Lisbon</h3>
@@ -235,24 +239,25 @@
             </div>
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans js--section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
                             <h3>Premium</h3>
-                            <p class="plan-price">$399 / month</p>
+                            <p class="plan-price">$399 <span> / month</span></p>
                             <p class="plan-price-meal">That’s only 13.30$ per meal</p>
                         </div>
                         <div>
                             <ul>
-                                <li><i class="ion-ios-checkmark">1 meal every day</i></li>
-                                <li><i class="ion-ios-checkmark">Order 24/7</i></li>
-                                <li><i class="ion-ios-checkmark">Access to newest creations</i></li>
-                                <li><i class="ion-ios-checkmark">Free delivery</i></li>
+                                    <!-- <i class="icon ion-md-person icon-small"></i> -->
+                                <li><i class="ion-ios-checkmark icon-small"></i>1 meal every day</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Free delivery</li>
                             </ul>
                         </div>
                         <div>
@@ -261,18 +266,18 @@
                     </div>
                 </div>
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
-                            <h3>Plan 2: Pro</h3>
-                            <p class="plan-price">149$ per month</p>
+                            <h3>Pro</h3>
+                            <p class="plan-price">$149 <span> / month</span></p>
                             <a class="plan-price-meal">That’s only 14.90$ per meal</a>
                         </div>
                         <div>
                             <ul>
-                                <li><i class="ion-ios-checkmark">1 meal 10 days/month</i></li>
-                                <li><i class="ion-ios-checkmark">Order 24/7</i></li>
-                                <li><i class="ion-ios-checkmark">Access to newest creations</i></li>
-                                <li><i class="ion-ios-checkmark">Free delivery</i></li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>1 meal 10 days/month</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Access to newest creations</li>
+                                <li><i class="ion-ios-checkmark icon-small"></i>Free delivery</li>
                             </ul>
                         </div>
                         <div>
@@ -281,18 +286,18 @@
                     </div>
                     </div>
                     <div class="col span-1-of-3">
-                        <div class="plan-box">
+                        <div class="plan-box js--wp-4">
                             <div>
-                                <h3>Plan 3: Starter</h3>
-                                <p class="plan-price">19$ per meal</p>
-                                <p class="plan-price-meal"></p>
+                                <h3>Starter</h3>
+                                <p class="plan-price">$19 <span> / meal</span></p>
+                                <p class="plan-price-meal"><br></p>
                             </div>
                             <div>
                                 <ul>
-                                    <li><i class="ion-ios-checkmark">1 meal</i></li>
-                                    <li><i class="ion-ios-checkmark">Order from 8 am to 12 pm</i></li>
-                                    <li><i class="ion-ios-close"></i></li>
-                                    <li><i class="ion-ios-checkmark">Free delivery</i></li>
+                                    <li><i class="ion-ios-checkmark icon-small"></i>1 meal</li>
+                                    <li><i class="ion-ios-checkmark icon-small"></i>Order from 8 am to 12 pm</li>
+                                    <li><i class="ion-ios-close icon-small"></i></li>
+                                    <li><i class="ion-ios-checkmark icon-small"></i>Free delivery</li>
                                 </ul>
                             </div>
                             <div>
@@ -303,16 +308,103 @@
             </div>
         </section>
 
+        <section class="section-forum">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form action="#" method="" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="">Newsletter?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked>Yes, please
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="">Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="">&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" value="Send it!">
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-googleplus"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2019 by Omnifood. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
 
     </body>
 </html>
 
 <!-- 
-
-
-
-
-
-
 
  -->
